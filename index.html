@@ -1,0 +1,193 @@
+<html>
+<head>
+<title>Zanka, la rue conviviale</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="ours.css" type="text/css">
+<link rel="shortcut icon" href="favicon.ico" >
+
+<script language="javascript" type="text/javascript"><!--
+
+var ancien_nom='';
+
+var gnomes='\
+<h4 class="h4">Leur r&ocirc;le :<br><\/h4>\
+Cultiver, distribuer et r&eacute;cup&eacute;rer la nourriture.';
+
+var nains='\
+<h4 class="h4">Leur r&ocirc;le :<br><\/h4>\
+R&eacute;colter, distribuer et r&eacute;cup&eacute;rer les mat&eacute;riaux de construction.';
+
+var fees='\
+<h4 class="h4">Leur r&ocirc;le :<br><\/h4>\
+Produire, distribuer et r&eacute;cup&eacute;rer l&apos;&eacute;nergie.';
+
+var farfadets='\
+<h4 class="h4">Leur r&ocirc;le :<br><\/h4>\
+Les plus jeunes d&apos;entre nous (tout-petits de moins d&apos;un an) qui b&acirc;tissent avec l&apos;aide de tous la s&eacute;curit&eacute; et la joie.';
+
+var lutins='\
+<h4 class="h4">Leur r&ocirc;le :<br><\/h4>\
+Cr&eacute;er, distribuer et r&eacute;cup&eacute;rer toutes formes d&apos;objets.';
+
+var trolls='\
+<h4 class="h4">Leur r&ocirc;le :<br><\/h4>\
+R&eacute;colter et distribuer la connaissance sous toutes ses formes, divertissement compris !';
+
+var elfes='\
+<h4 class="h4">Leur r&ocirc;le :<br><\/h4>\
+Prendre soin des &ecirc;tres vivants, des objets, des b&acirc;timents et de la rue.';
+
+function antiT(nom,message) {
+  if (ancien_nom != nom) {
+    document.getElementById(nom).innerHTML=message;
+    if (ancien_nom=='gnomes')
+       document.getElementById('gnomes').innerHTML='<p class="b">Des gnomes<\/p>';
+    if (ancien_nom=='nains')
+       document.getElementById('nains').innerHTML='<p class="b">Des nain.e.s<\/p>';
+    if (ancien_nom=='fees')
+       document.getElementById('fees').innerHTML='<p class="b">Des f&eacute;.e.s<\/p>';
+    if (ancien_nom=='farfadets')
+       document.getElementById('farfadets').innerHTML='<p class="b">Des farfadet.te.s<\/p>';
+    if (ancien_nom=='lutins')
+       document.getElementById('lutins').innerHTML='<p class="b">Des lutin.e.s<\/p>';
+    if (ancien_nom=='trolls')
+       document.getElementById('trolls').innerHTML='<p class="b">Des troll.e.s<\/p>';
+    if (ancien_nom=='elfes')
+       document.getElementById('elfes').innerHTML='<p class="b">Des elfes<\/p>';
+    ancien_nom = nom;
+  }
+}
+
+function vide() {
+  if (ancien_nom != "") {
+    ancien_nom = "";
+    document.getElementById('gnomes').innerHTML='<p class="b">Des gnomes<\/p>';
+    document.getElementById('nains').innerHTML='<p class="b">Des nain.e.s<\/p>';
+    document.getElementById('fees').innerHTML='<p class="b">Des f&eacute;.e.s<\/p>';
+    document.getElementById('farfadets').innerHTML='<p class="b">Des farfadet.te.s<\/p>';
+    document.getElementById('lutins').innerHTML='<p class="b">Des lutin.e.s<\/p>';
+    document.getElementById('trolls').innerHTML='<p class="b">Des troll.e.s<\/p>';
+    document.getElementById('elfes').innerHTML='<p class="b">Des elfes<\/p>';
+  }
+}
+
+
+
+--></script>
+
+</head>
+
+<body class="general" onload="init();">
+
+<h1 onmouseover="vide();" class="h1"><center>Zanka : la rue conviviale</center></h1>
+
+<br>
+
+<table>
+  <tr>
+    <td class="b"><a href="https://vimeo.com/90175873">Am&eacute;riques</a></td>
+    <td class="b">Afriques</td>
+    <td class="b"><a href="Europes.html">Europes<a></td>
+    <td class="b">Asies</td>
+    <td class="b">Oc&eacute;anies</td>
+    <td class="b"><a style="color:blue" href="https://www.facebook.com/ZankaVivreSaVieDe0a120ans/"><b>Facebook</b></a></td>
+  </tr>
+</table>
+
+<br>
+
+<table>
+  <tr>
+    <td onmouseover="antiT('gnomes',gnomes);"><br><p class="b" id="gnomes">Des gnomes</p></td>
+    <td onmouseover="antiT('nains',nains);"><br><p class="b" id="nains">Des nain.e.s</p></td>
+    <td onmouseover="antiT('fees',fees);"><br><p class="b" id="fees">Des f&eacute;.e.s</p></td>
+  </tr>
+
+  <tr>
+    <td><br></td>
+    <td onmouseover="antiT('farfadets',farfadets);"><br><p class="b" id="farfadets">Des farfadet.te.s</p></td>
+    <td><br></td>
+  </tr>
+
+  <tr>
+    <td onmouseover="antiT('lutins',lutins);"><br><p class="b" id="lutins">Des lutin.e.s</p></td>
+    <td onmouseover="antiT('trolls',trolls);"><br><p class="b" id="trolls">Des troll.e.s</p></td>
+    <td onmouseover="antiT('elfes',elfes);"><br><p class="b" id="elfes">Des elfes</p></td>
+  </tr>
+</table>
+
+<br>
+
+<center><h1 class="h1">La rue, &ccedil;a sert &agrave; quoi d&eacute;j&agrave; ?</h1></center>
+
+<div onmouseover="vide();" href="http://zanka.international/home.html" scrolling="auto" width="100%">
+<i>Redonnons &agrave; la rue ses lettres de noblesse !</i>
+<br /><br />
+On peut faire bien plus que l&apos;<em>emprunter</em> pour aller d&apos;un point A &agrave; un point B. Elle peut
+&ecirc;tre plus belle, plus utile, plus agr&eacute;able, pour tous. On peut s&apos;y nourrir, s&apos;y divertir, s&apos;y instruire, y d&eacute;battre, y cr&eacute;er,
+y soigner, etc. Elle peut redevenir un facteur d&apos;&eacute;galit&eacute; sociale, de joie. Un espace de culture et de libert&eacute;.
+<br /><br />Le but de Zanka (<a href="http://insaniyat.revues.org/2298#tocto2n2" title="la rue en arabe">la rue en arabe</a>, anim&eacute;e et solidaire) 
+c&apos;est de permettre &agrave; tous de fournir les services n&eacute;cessaires &agrave; tous, gratuitement et librement, c&apos;est &agrave; dire sans troc ni argent
+(ce qui vient de la rue appartient &agrave; la rue) et sans hi&eacute;rarchies ni pressions (la structure, comme la rue, est horizontale, sans donneurs d&apos;ordres ni
+monopoles d&apos;experts).
+<br /><br />
+Chacun, de 0 &agrave; 120 ans, peut se sentir appartenir au <a href="https://www.facebook.com/ZankaVivreSaVieDe0a120ans/" title="petit peuple de la rue">
+petit peuple de la rue</a> et participer, en tant que gnome, nain, elfe, farfadet, etc. La liste des cat&eacute;gories propos&eacute;e est une fantaisie des plus
+s&eacute;rieuse : son inspiration folklorique vise &agrave; emp&ecirc;cher toute tentative de hi&eacute;rarchisation, toute emprise du <i>pratique</i> et toute
+mon&eacute;tarisation. Chaque habitant de la rue, qui y travaille <strong>et</strong> s&apos;y ressource en suivant l'&eacute;thique de Zanka (libert&eacute; et
+gratuit&eacute;) est de fait partie prenante du petit peuple et pourra ainsi b&eacute;n&eacute;ficier de toute sa g&eacute;n&eacute;rosit&eacute; et se servir
+aupr&egrave;s de lui sans avoir de compte &agrave; rendre &agrave; personne.
+
+<h4>Un exemple ?</h4>
+
+Les gnomes veillent sur les <a href="http://lesincroyablescomestibles.fr/" title="jardins potagers publics">jardins potagers publics</a> et
+<a href="http://www.bergersurbains.com" title="animaux d'élevage publics">les animaux d&apos;&eacute;levage publics</a>.<br /><br />
+Ils permettent &agrave; tous d&apos;avoir acc&egrave;s &agrave; une nourriture de qualit&eacute;. Ils cultivent, r&eacute;coltent et distribuent gratuitement la
+nourriture dans la rue. En &eacute;change de ce service, Margaret, une gnome qui consacre deux heures chaque jour &agrave; l&apos;entretien d&apos;une parcelle de
+fraises, peut b&eacute;n&eacute;ficier de tous les services de la rue. Elle peut elle aussi manger &agrave; sa faim, elle peut obtenir aupr&egrave;s de Claude, un
+lutin, les objets de son choix, des jouets par exemple ou des livres. Quand elle n&apos;en a plus besoin, elle les rend &agrave; Claude, ou s&apos;ils sont
+cass&eacute;s, &agrave; Mohamed, un elfe, qui les r&eacute;parera. S&apos;il d&eacute;cide qu&apos;ils sont trop us&eacute;s, ils les confiera alors &agrave;
+&Eacute;lise, une naine qui les recyclera pour d'autres projets, ce qui profitera &agrave; nouveau &agrave; Claude, et donc &agrave; Margaret. Mais Margaret peut
+tr&egrave;s bien &ecirc;tre elle-m&ecirc;me aussi un lutin et concevoir &agrave; son tour les jouets qu&apos;elle imagine, ou des outils pour le jardin, ou des
+charlottes &agrave; la fraise ;-)
+
+<h4>Et si on ne fait rien &agrave; part profiter de tout le monde ?</h4>
+
+<br />
+Zanka se veut un pont entre toutes les personnes de bonnes volont&eacute;s, et non une communaut&eacute;, m&ecirc;me ouverte. La rue est &agrave; tous et donc &agrave;
+personne. Tout le monde peut cesser d&apos;habiter la rue quand il le souhaite et on ne pourra lui faire pour &ccedil;a aucun reproche. Concr&egrave;tement, au bout
+d&apos;un certain temps, une personne totalement inactive et qui ne sortirait dans la rue que pour b&eacute;n&eacute;ficier de ses services finira par se faire
+connaitre par son absence d&apos;action et sera alors assimilable &agrave; un vieux 
+<a href="http://revolutionfromhome.com/2016/04/absence-village-mothers-struggle/">farfadet</a>. Les farfadets sont les b&eacute;b&eacute;s de moins d&apos;un an, qui savent
+&agrave; peine marcher et parler et dont la contribution majeure est d&apos;inciter &agrave; la s&eacute;curit&eacute; et &agrave; la joie, car au del&agrave;,
+m&ecirc;me modestement, on peut participer autrement, par exemple en goutant les fraises pour s&eacute;lectionner les meilleures vari&eacute;t&eacute;s ;-).
+<br />
+Cela dit, il est tellement difficile de rester totalement inactif et de se priver de participer &agrave; la vie de la rue d&apos;une quelconque fa&ccedil;on que ces personnes
+m&eacute;ritent finalement un certain respect.
+</div>
+
+<center><h1 class="h1">Les ateliers de la rue</h1></center>
+
+<div onmouseover="vide();" href="http://zanka.international/home.html" scrolling="auto" width="100%">
+Zanka implique d'habiter la rue, de se l'approprier v&eacute;ritablement. &Agrave; l'inverse des sans domiciles fixes qui y mendient sans vouloir s'y fixer, nous
+voulons y marcher en convives (Du latin <i>convivialis</i> (relatif au repas pris en commun).
+<br>Cet espace est public : il nous appartient, alors investissons le et choyons le. Tel pourrait &ecirc;tre le credo de Zanka.
+<br><br>Pour le parcourir sans fatigue, il restait &agrave; inventer un support : le <b>pot-table</b> :
+
+<img width="95%" src="images/pot-table_v3.jpg"></img>
+
+<h4>Des exemples d'ateliers parmis tous les possibles :</h4>
+- Ateliers Montessori et apprentissages libres &agrave; tous &acirc;ges (&eacute;cole des pattes)
+<a style="color:green"><b>[d&eacute;fense de la libert&eacute; d'instruction]</b></a><br>
+- Ateliers Incroyables Comestibles : jardinage, cuisine et d&eacutegustation de rue
+<a style="color:green"><b>[d&eacute;fense de l'autonomie alimentaire]</b></a><br>
+- Ateliers FabLab : &eacute;lectronique, m&eacute;canique, etc
+<a style="color:green"><b>[exp&eacute;rimentation d'une Industrie r&eacute;siliente et libre]</b></a><br>
+- Ateliers Creative Commons : les (r&eacute;)cr&eacute;ations artistiques
+<a style="color:green"><b>[mettre &agrave; port&eacute;e de tous la production et la diffusion]</b></a><br>
+
+</div>
+
+
+</body>
+</html>
