@@ -1,0 +1,40 @@
+nop
+
+get - put
+
+add - sub
+
+and - nand - andn / or - nor - orn / xor -xorn
+
+shr - shl - sar / ror - rol  //décalage et rotation
+
+lsb - lzb - sb
+
+--------------------
+
+* SHR: SHift Right
+
+               R1 = 01001101
+SHR R1 1 R2 => R2 = 00100110
+SHR R1 2 R2 => R2 = 00010011
+SHR R1 4 R2 => R2 = 00000010
+
+
+* SAR: Shift Arithmetic Right : préserve le bit de signe
+
+               R1 = 01001101  R1 = 10110010
+SHR R1 1 R2 => R2 = 00100110  R2 = 11011001
+SHR R1 2 R2 => R2 = 00010011  R2 = 11101100
+SHR R1 4 R2 => R2 = 00000010  R2 = 11111011
+
+
+* SHL: SHift Left : comme SHR mais dans l'autre sens
+ - ajoute N bits à 0 dans les bits de poids faible
+ - décale tout vers la gauche
+ - efface les N bits de poids fort
+
+               R1 = 01001101
+SHL R1 1 R2 => R2 = 10011010
+SHL R1 2 R2 => R2 = 00110100
+SHL R1 4 R2 => R2 = 11010000
+

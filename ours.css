@@ -1,0 +1,41 @@
+table, tr {
+width: 100%;
+text-align : center;
+vertical-align: top;
+border: 0px solid black;
+border-spacing: 5px;
+padding: 5px;
+}
+
+h1.h1 {
+color: black;
+}
+
+p.b {
+color: black;
+font-weight: bold;
+}
+
+p.p {
+color: black;
+}
+
+h4.h4 {
+color: black;
+text-align: center;
+}
+
+a.lien {
+color: black;
+font-weight: bold;
+text-decoration: none;
+}
+
+a.lienaccueil {
+color: black;
+}
+
+img.accueil {
+width: 100%;
+border: 0px;
+}

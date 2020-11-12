@@ -1,0 +1,49 @@
+body.general {
+background: black;
+}
+
+h1.h1 {
+color: white;
+}
+
+td.images {
+width:25%;
+vertical-align: top;
+border: 0px;
+text-align:center;
+}
+
+a.lien {
+color: white;
+text-align:center;
+}
+
+a.lienaccueil {
+color: white;
+text-align:center;
+}
+
+td.lien {
+color: white;
+vertical-align: top;
+border: 0px;
+text-align:center;
+}
+
+img.acceuil {
+width:100%;
+border: 0px;
+}
+
+p.b {
+color: white;
+font-weight: bold;
+}
+
+p.p {
+color: white;
+}
+
+h4.h4 {
+color: white;
+}

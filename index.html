@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>ours-agile</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="ours.css" type="text/css">
+<link rel="alternate stylesheet" href="ours_noir.css" type="text/css" title="ours noir">
+<script type="text/javascript" src="styleswitcher.js"></script>
+<link rel="shortcut icon" href="favicon.ico" >
+
+<script language="javascript" type="text/javascript"><!--
+
+var ancien_nom='';
+
+var plep='\
+<H4 class="h4">m&eacute;canique :<br><\/H4>\
+<a class="lienaccueil" src="images/composition_generale.png" target="contenu">une petite pr&eacute;sentation<\/a><br>\
+<a class="lienaccueil" src="ossature.html" target="contenu">la composition interne<\/a><br>\
+<a class="lienaccueil" src="servos.html" target="contenu">les servo moteurs<\/a><br>';
+
+var plap='\
+<h4 class="h4">&eacute;lectronique :<br><\/h4>\
+la gestion de l\'alimentation<br>\
+<a class="lienaccueil" target="contenu" src="capteurs.html">les capteurs</a><br>\
+zigbee';
+
+var plop='\
+<h4 class="h4">le microcontroleur :<br><\/h4>\
+<a class="lienaccueil" src="yasep.html" target="contenu" title="le microcontroleur YASEP">YASEP<\/a><br>\
+la gestion des capteurs';
+
+var plip='\
+<h4 class="h4">informatique :<br><\/h4>\
+le programme du robot<br>\
+<a class="lienaccueil" target="_top" src="MetaFor/code/page_centrale.html" title="MetaFor">un d&eacute;but d\'interface de programmation graphique</a><br>\
+des r&eacute;seaux de neurones';
+
+function antiT(nom,message) {
+  if (ancien_nom != nom) {
+    document.getElementById(nom).innerHTML=message;
+    if (ancien_nom=='plep')
+       document.getElementById('plep').innerHTML='<p class="b">m&eacute;canique<\/p>';
+    if (ancien_nom=='plap')
+       document.getElementById('plap').innerHTML='<p class="b">&eacute;lectronique<\/p>';
+    if (ancien_nom=='plop')
+       document.getElementById('plop').innerHTML='<p class="b">le microcontroleur<\/p>';
+    if (ancien_nom=='plip')
+       document.getElementById('plip').innerHTML='<p class="b">informatique<\/p>';
+    ancien_nom = nom;
+  }
+}
+
+function vide() {
+  if (ancien_nom != "") {
+    ancien_nom = "";
+    document.getElementById('plep').innerHTML='<p class="b">m&eacute;canique<\/p>';
+    document.getElementById('plap').innerHTML='<p class="b">&eacute;lectronique<\/p>';
+    document.getElementById('plop').innerHTML='<p class="b">le microcontroleur<\/p>';
+    document.getElementById('plip').innerHTML='<p class="b">informatique<\/p>';
+  }
+}
+
+function change_image(id,nom) {
+  var i=document.getElementById(id);
+  i.src="images/"+nom;
+}
+
+function ours_noir() {
+  change_image("img_meca","hubert_graphismeMecaniqueN.PNG"),
+  change_image("img_alim","hubert_graphismeAlimentationN.PNG"),
+  change_image("img_elec","hubert_graphismeElectroniqueN.PNG"),
+  change_image("img_info","hubert_graphismeInformatiqueN.PNG"),
+  setActiveStyleSheet('ours noir');
+}
+
+function ours_blanc() {  
+  change_image("img_meca","hubert_graphismeMecanique.PNG"),
+  change_image("img_alim","hubert_graphismeAlimentation.PNG"),
+  change_image("img_elec","hubert_graphismeElectronique.PNG"),
+  change_image("img_info","hubert_graphismeInformatique.PNG"),
+  setActiveStyleSheet('ours blanc');
+}
+
+function retrieveCookie( cookieName ) {
+  var cookieJar = document.cookie.split( "; " );
+  for( var x = 0; x < cookieJar.length; x++ ) {
+    var oneCookie = cookieJar[x].split( "=" );
+    if( oneCookie[0] == escape( cookieName ) )
+      return unescape( oneCookie[1] );
+  }
+  return null;
+}
+
+function init() {
+  // lecture du cookie de style
+  if (retrieveCookie("style") == "ours noir")
+    ours_noir();
+}
+
+--></script>
+
+</head>
+
+<body class="general" onload="init();">
+
+<img onclick="ours_blanc();" src="images/ours_blanc.png" align="right" alt="passer en noir sur blanc" title="passer en noir sur blanc">
+<img onclick="ours_noir();"  src="images/ours_noir.png"  align="right" alt="passer en blanc sur noir" title="passer en blanc sur noir">
+
+<center><h1 id="plyp" class="h1">un projet de peluche anim&eacute;e<h1></center>
+
+<br>
+
+<table width="100%" cellpadding="5" cellspacing="5" valign="top" border="0">
+  <tr align="center">
+    <td><a class="lien" href="http://ygllo.com/" target="_top">des nouvelles fraiches</a></td>
+    <td><a class="lien" src="developpement.html" target="contenu">le d&eacute;veloppement</a></td>
+    <td><a class="lien" href="http://ygllo.com/tribune" target="contenu">communiquons</a></td>
+    <td><a class="lien" src="lien.html" target="contenu">ce serveur</a></td>
+  </tr>
+
+  <tr>
+    <td class="images" onclick="antiT('plep',plep);"><br>
+     <img id="img_meca" class="accueil" src="images/hubert_graphismeMecanique.PNG" alt="mecanique">
+     <p class="b" id="plep">m&eacute;canique</p>
+    </td>
+
+    <td class="images" onclick="antiT('plap',plap);"><br>
+     <img id="img_alim" class="accueil" src="images/hubert_graphismeAlimentation.PNG" alt="electronique">
+     <p class="b" id="plap">&eacute;lectronique</p>
+    </td>
+
+    <td class="images" onclick="antiT('plop',plop);"><br>
+     <img id="img_elec" class="accueil" src="images/hubert_graphismeElectronique.PNG" alt="microcontolleur">
+     <p class="b" id="plop">le microcontroleur</p>
+    </td>
+
+    <td class="images" onclick="antiT('plip',plip);"><br>
+     <img id="img_info" class="accueil" src="images/hubert_graphismeInformatique.PNG" alt="informatique">
+     <p class="b" id="plip">informatique</p>
+    </td>
+
+  </tr>
+</table>
+
+<hr>
+
+<iframe name="contenu" onmouseover="vide();" src="home.html" scrolling="auto" height="1000px" width="100%" frameborder="0"></iframe>
+
+</body>
+</html>
